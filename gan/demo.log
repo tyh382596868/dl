@@ -1,0 +1,34 @@
+2023-10-27 20:14:42 root [/tmp/ipykernel_62473/554851775.py line:36] ERROR Huperparameters部分报错：]
+2023-10-27 20:14:42 root [/tmp/ipykernel_62473/554851775.py line:37] ERROR descriptor '__init__' of 'super' object needs an argument]
+2023-10-27 20:14:42 root [/tmp/ipykernel_62473/554851775.py line:38] ERROR 
+Traceback (most recent call last):
+  File "/tmp/ipykernel_62473/554851775.py", line 19, in <module>
+    disc = Discriminator(img_dim).to(devive)
+  File "/tmp/ipykernel_62473/211105169.py", line 6, in __init__
+    super.__init__()#??
+TypeError: descriptor '__init__' of 'super' object needs an argument
+]
+#############################################
+super.__init__() ——————> super().__init__()
+#############################################
+
+2023-10-27 20:15:38 root [/tmp/ipykernel_62473/554851775.py line:36] ERROR Huperparameters部分报错：]
+2023-10-27 20:15:38 root [/tmp/ipykernel_62473/554851775.py line:37] ERROR __init__() got an unexpected keyword argument 'transforms']
+2023-10-27 20:15:38 root [/tmp/ipykernel_62473/554851775.py line:38] ERROR 
+Traceback (most recent call last):
+  File "/tmp/ipykernel_62473/554851775.py", line 27, in <module>
+    datasets = datasets.MNIST(root="/mnt/petrelfs/share_data/zhaobin/tyh/",transforms=trans,download=True)
+TypeError: __init__() got an unexpected keyword argument 'transforms'
+]
+2023-10-27 20:27:14 root [/tmp/ipykernel_62473/4239081688.py line:36] ERROR Huperparameters部分抛错：]
+2023-10-27 20:27:14 root [/tmp/ipykernel_62473/4239081688.py line:37] ERROR __init__() got an unexpected keyword argument 'transforms']
+2023-10-27 20:27:14 root [/tmp/ipykernel_62473/4239081688.py line:38] ERROR 
+Traceback (most recent call last):
+  File "/tmp/ipykernel_62473/4239081688.py", line 27, in <module>
+    datasets = datasets.MNIST(root="/mnt/petrelfs/share_data/zhaobin/tyh/",transforms=trans,download=True)
+TypeError: __init__() got an unexpected keyword argument 'transforms'
+]
+
+####################################################################
+transform=trans,download=True) ————> transform=trans,download=True)
+####################################################################
